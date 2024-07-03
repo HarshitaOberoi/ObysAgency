@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Manjari
+- Font Author: Copyright 2018 The Manjari Project Authors (https://gitlab.com/smc/fonts/manjari)
+- Font Source: http://fonts.gstatic.com/s/manjari/v11/k3kQo8UPMOBO2w1UTd7iL0nAMaM.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Plain light';
+    src: url(plain-light-webfont.woff);
+} 
+@font-face {
+    font-family: 'Silk serif';
+    src: url(silkserif-lightitalic-webfont.woff);
+}
+@font-face {
+    font-family: "Plain regular";
+    src: url(plain-regular-webfont.woff);
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@800&display=swap');
+ 
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+    /* overflow-x: hidden; */
+    font-family: "Plain light";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.loader{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 20vh 10vw;
+}
+.line{
+    height:fit-content;
+    overflow: hidden;
+    /* overflow property se ek kattta effect dikhta hai
+    otherwise animation time space kaafi dikhti hai
+    between h1 and .line */
+}
+.line h1{
+    font-size: 7.8vw;
+    text-transform: uppercase;
+    
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    gap:5vw;
+}
+.linepart1{
+    display: flex;
+    text-align: center;
+   font-size: 4vw;
+   
+}
+.linepart1 h3{
+    font-family:'Silk serif';
+    
+   
+   
+}
+#changingtimer{
+   width:10vw;
+   /* changing vaale ki width bdane se 
+   neighbouring container pe side  pressure effect nhi hota*/
+   
+}
+.line h1{
+    font-size:5.4vw;
+}
+#now{
+    height:7.5vw;
+    /* height: 6vw; */
+    /* text-align: center; */
+    animation-name:now;
+   /* font-weight: 900; */
+   
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes now{
+    /* alternately change krne ke liyeyeh animation
+    and animation itertaion count infinite */
+    0%{
+        font-family: "Plain light";
+        -webkit-text-stroke: 1px solid white;
+       color: white;
+       
+       
+    }
+    
+    100%{
+        font-family: "Silk serif";
+        -webkit-text-stroke: 1px solid white;
+       color:transparent;
+       
+       
+    }
+}
+
+.main{
+    position:relative;
+    background-color: #111;
+    z-index: 99;
+}
+.page1{
+    height:300vh;
+    width:100%;
+    background-color: #151515;
+    position: relative;
+}
+
+.nav{
+    height: 30vh;
+    min-width: 100%;
+    display: flex;
+    padding: 3vw;
+    
+    justify-content: space-between;
+}
+.right,.left,.left1,.left2{
+    display: flex;
+    gap:5vw;
+    font-size: 1vw;
+    font-weight: 100;
+    justify-content: space-around;
+}
+
+.left2{
+    flex-direction: column;
+    gap:0vw;
+    justify-content: flex-start;
+}
+.left{
+    gap:23vw;
+}
+.left1{
+gap:4vw;
+
+}
+.left h2{
+    font-family: 'Shippori Mincho';
+    font-size: 2vw;
+}
+.left1 i{
+    font-size: 2vw;
+    
+} 
+.number{
+    
+   
+    margin-left: 22vw;
+}
+ .number h1{
+    
+    font-family: "Silk serif";
+ }
+.hero{
+    overflow-y: hidden;
+   
+}
+.hero h1{
+    text-transform: uppercase;
+    font-size: 6vw;
+   margin-left: 33vw;
+}
+#hero3{
+    display: flex;
+    justify-content: flex-start;
+}
+#hero3 h1{
+    text-decoration: underline;
+
+}
+#hero3graphics{
+    margin-left: 0;
+}
+/* #hero3:hover h1{
+-webkit-text-stroke: 1px solid white;
+color: transparent;
+} */
+.cursor{
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+    border:2px solid rgba(255, 255, 255, 0.685);
+    position:fixed;
+    z-index: 1200;
+    mix-blend-mode: difference;
+    /* colorc change of border on entring heading range with above propwerty */
+}
